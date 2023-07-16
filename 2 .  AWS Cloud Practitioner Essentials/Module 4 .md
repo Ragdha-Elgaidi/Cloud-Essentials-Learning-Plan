@@ -68,3 +68,24 @@ tering. They remember previous decisions made for incoming packets.
 - When a packet response for that request returns to the instance, the security group remembers your previous request. The security group allows the response to proceed, regardless of inbound security group rules.
 - Both network ACLs and security groups enable you to configure custom rules for the traffic in your VPC.
 # Global networking
+## Domain Name System (DNS)
+- Suppose that AnyCompany has a website hosted in the AWS Cloud. Customers enter the web address into their browser, and they are able to access the website. This happens because of Domain Name System (DNS) resolution. DNS resolution involves a customer DNS resolver communicating with a company DNS server.
+- You can think of DNS as being the phone book of the internet. DNS resolution is the process of translating a domain name to an IP address
+
+<img width="840" alt="LOQvC2LzaLPOU5Xn_AFBIDcTkYnYj1OOb" src="https://github.com/Ragdha-Elgaidi/Cloud-Essentials-Learning-Plan/assets/76912120/2d279ccf-c36a-4289-ae32-f78ee7075ce9">
+
+## Amazon Route 53
+-  a DNS web service. It gives developers and businesses a reliable way to route end users to internet applications hosted in AWS.
+-  Amazon Route 53 connects user requests to infrastructure running in AWS (such as Amazon EC2 instances and load balancers). It can route users to infrastructure outside of AWS.
+- Another feature of Route 53 is the ability to manage the DNS records for domain names. You can register new domain names directly in Route 53. You can also transfer DNS records for existing domain names managed by other domain registrars. This enables you to manage all of your domain names within a single location.
+-  Route 53 can direct traffic to different endpoints using several different routing policies, such as latency-based routing, geolocation DNS, geoproximity, and weighted round robin. If we take geolocation DNS, that means we direct traffic based on where the customer is located
+### Example How Amazon Route 53 and Amazon CloudFront deliver content:
+- Suppose that AnyCompany’s application is running on several Amazon EC2 instances. These instances are in an Auto Scaling group that attaches to an Application Load Balancer. 
+
+   - A customer requests data from the application by going to AnyCompany’s website. 
+   - Amazon Route 53 uses DNS resolution to identify AnyCompany.com’s corresponding IP address, 192.0.2.0. This information is sent back to the customer. 
+   - The customer’s request is sent to the nearest edge location through Amazon CloudFront. 
+   - Amazon CloudFront connects to the Application Load Balancer, which sends the incoming packet to an Amazon EC2 instance.
+
+<img width="840" alt="e-xAJkcMGrxL3sq4_WE71CA369xcdceJ2" src="https://github.com/Ragdha-Elgaidi/Cloud-Essentials-Learning-Plan/assets/76912120/bb0d7ea4-1a25-45aa-85c0-4a0ed057c278">
+#####  CDN is a network that helps to deliver edge content to users based on their geographic location. 

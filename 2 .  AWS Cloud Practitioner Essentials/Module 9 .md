@@ -63,3 +63,19 @@
 - Retaining consists of keeping applications that are critical for the business in the source environment. This might include applications that require major refactoring before they can be migrated, or, work that can be postponed until a later time.
 ### Retiring
 - Retiring is the process of removing applications that are no longer needed.
+# AWS Snow Family
+## AWS Snow Family members
+- The AWS Snow Family is a collection of physical devices that help to physically transport up to exabytes of data into and out of AWS. 
+- AWS Snow Family is composed of AWS Snowcone, AWS Snowball, and AWS Snowmobile.
+- These devices offer different capacity points, and most include built-in computing capabilities. AWS owns and manages the Snow Family devices and integrates with AWS security, monitoring, storage management, and computing capabilities.
+- AWS Snowcone is a small, rugged, and secure edge computing and data transfer device. 
+  - It features 2 CPUs, 4 GB of memory, and 8 TB of usable storage.
+- AWS Snowball offers two types of devices:
+   - Snowball Edge Storage Optimized devices are well suited for large-scale data migrations and recurring transfer workflows, in addition to local computing with higher capacity needs. 
+        - Storage: 80 TB of hard disk drive (HDD) capacity for block volumes and Amazon S3 compatible object storage, and 1 TB of SATA solid state drive (SSD) for block volumes. 
+        - Compute: 40 vCPUs, and 80 GiB of memory to support Amazon EC2 sbe1 instances (equivalent to C5).
+   - Snowball Edge Compute Optimized provides powerful computing resources for use cases such as machine learning, full motion video analysis, analytics, and local computing stacks. 
+       - Storage: 42-TB usable HDD capacity for Amazon S3 compatible object storage or Amazon EBS compatible block volumes and 7.68 TB of usable NVMe SSD capacity for Amazon EBS compatible block volumes. 
+       - Compute: 52 vCPUs, 208 GiB of memory, and an optional NVIDIA Tesla V100 GPU. Devices run Amazon EC2 sbe-c and sbe-g instances, which are equivalent to C5, M5a, G3, and P3 instances.
+- AWS Snowmobile is an exabyte-scale data transfer service used to move large amounts of data to AWS. 
+   - You can transfer up to 100 petabytes of data per Snowmobile, a 45-foot long ruggedized shipping container, pulled by a semi trailer truck.

@@ -79,3 +79,26 @@
        - Compute: 52 vCPUs, 208 GiB of memory, and an optional NVIDIA Tesla V100 GPU. Devices run Amazon EC2 sbe-c and sbe-g instances, which are equivalent to C5, M5a, G3, and P3 instances.
 - AWS Snowmobile is an exabyte-scale data transfer service used to move large amounts of data to AWS. 
    - You can transfer up to 100 petabytes of data per Snowmobile, a 45-foot long ruggedized shipping container, pulled by a semi trailer truck.
+
+     ![r594ifrbCQFZ5aCV_IIcwz3-CkuSyAs0F](https://github.com/Ragdha-Elgaidi/Cloud-Essentials-Learning-Plan/assets/76912120/d3de3b34-bdd1-4faa-82cc-f4a95e15b35b)
+
+# Innovation with AWS
+- When examining how to use AWS services, it is important to focus on the desired outcomes. You are properly equipped to drive innovation in the cloud if you can clearly articulate the following conditions: 
+   - The current state
+   - The desired state
+   - The problems you are trying to solve
+- Consider some of the paths you might explore in the future as you continue on your cloud journey.
+## serverless applications
+- With AWS, serverless refers to applications that don’t require you to provision, maintain, or administer servers. You don’t need to worry about fault tolerance or availability. AWS handles these capabilities for you.
+- AWS Lambda is an example of a service that you can use to run serverless applications. If you design your architecture to trigger Lambda functions to run your code, you can bypass the need to manage a fleet of servers.
+- Building your architecture with serverless applications enables your developers to focus on their core product instead of managing and operating servers.
+## artificial intelligence (AI)
+- AWS offers a variety of services powered by artificial intelligence (AI). 
+- For example, you can perform the following tasks:
+   - Convert speech to text with Amazon Transcribe.
+   - Discover patterns in text with Amazon Comprehend.
+   - Identify potentially fraudulent online activities with Amazon Fraud Detector.
+   - Build voice and text chatbots with Amazon Lex.
+## machine learning (ML) 
+- Traditional machine learning (ML) development is complex, expensive, time consuming, and error prone. AWS offers Amazon SageMaker to remove the difficult work from the process and empower you to build, train, and deploy ML models quickly.
+- You can use ML to analyze data, solve complex problems, and predict outcomes before they happen.

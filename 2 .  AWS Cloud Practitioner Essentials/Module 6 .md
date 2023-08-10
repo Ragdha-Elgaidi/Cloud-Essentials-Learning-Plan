@@ -23,14 +23,13 @@
    - IAM policies
    - Multi-factor authentication
 ## AWS account root user
-- When you first create an AWS account, you begin with an identity known as the root user(opens in a new tab). 
+- When you first create an AWS account, you begin with an identity known as the root user(. 
 - The root user is accessed by signing in with the email address and password that you used to create your AWS account. You can think of the root user as being similar to the owner of the coffee shop. It has complete access to all the AWS services and resources in the account.
 Root user creates first IAM user. Then grants permissions to IAM user to create new users. IAM user creates new users.
 ### Best practice:
 - Do not use the root user for everyday tasks. 
 - Instead, use the root user to create your first IAM user and assign it permissions to create other users.
-- Then, continue to create other IAM users, and access those identities for performing regular tasks throughout AWS. Only use the root user when you need to perform a limited number of tasks that are only available to the root user. Examples of these tasks include changing your root user email address and changing your AWS support plan. For more information, see “Tasks that require root user credentials” in the AWS Account Management Reference Guide(opens in a new tab).
-## IAM users
+- Then, continue to create other IAM users, and access those identities for performing regular tasks throughout AWS. Only use the root user when you need to perform a limited number of tasks that are only available to the root user. Examples of these tasks include changing your root user email address and changing your AWS support plan.
 - An IAM user is an identity that you create in AWS. It represents the person or application that interacts with AWS services and resources. It consists of a name and credentials.
 - By default, when you create a new IAM user in AWS, it has no permissions associated with it. To allow the IAM user to perform specific actions in AWS, such as launching an Amazon EC2 instance or creating an Amazon S3 bucket, you must grant the IAM user the necessary permissions.
 ### Best practice:
